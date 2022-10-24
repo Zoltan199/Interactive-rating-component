@@ -1,5 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+:root{
+    ---orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lightgrey: hsl(217, 12%, 63%);
+    --mediumgrey: hsl(216, 12%, 54%);
+    --darkblue: hsl(213, 19%, 18%);
+    --verydarkblue: hsl(216, 12%, 8%);
+}
+
+main{
+    background-color: var(--verydarkblue);
+    height: 100vh;
+}
+
+.rating-component{
+    background-color: var(--darkblue);
+    width: 150px;
+    height: 200px;
 }
