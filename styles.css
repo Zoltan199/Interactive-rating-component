@@ -18,10 +18,58 @@
 main{
     background-color: var(--verydarkblue);
     height: 100vh;
+    font-family: 'Overpass';
 }
 
 .rating-component{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(
+    to bottom,
+    hsl(212, 18%, 14%),
+    hsl(220, 16%, 11%)
+  );
+    border-radius: 5%;
+    width: 340px;
+    height: 370px;
+    padding: 25px;
+    gap: 35px;
+}
+
+.card img{
+    border-radius: 50%;
     background-color: var(--darkblue);
-    width: 150px;
-    height: 200px;
+    align-self: flex-start;
+    padding: 8px;
+}
+
+.information h1{
+    color: var(--white);
+}
+
+.information p{
+    color: var(--lightgrey);
+}
+
+.rate-list{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+button{
+    color: var(--white);
+    background-color: var(---orange);
+    border: none;
 }
