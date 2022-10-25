@@ -13,21 +13,29 @@
     <main>
         <article class="rating-component">
             <div class="card">
-                <img src="./images/icon-star.svg" alt="icon-star">
+                <img src="./images/icon-star.svg" alt="icon-star" class="star-img">
                 <div class="information">
                     <h1>How did we do?</h1>
-                    <p>Please let us know we did your support request. All feedback is appreciated to help us improve our offering!</p>
+                    <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
                 </div>
                 <ul class="rate-list">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                </ul>
-                <button type="submit">SUBMIT</button>
-                </form>
-                
+                    <li><button class="btn-rate">1</button></li>
+                    <li><button class="btn-rate">2</button></li>
+                    <li><button class="btn-rate">3</button></li>
+                    <li><button class="btn-rate">4</button></li>
+                    <li><button class="btn-rate">5</button></li>
+                </ul>              
+                <button type="submit" class="btn-submit">SUBMIT</button>
+            </div>
+        </article>
+        <article class="tnk-component">
+            <div class="card-2">
+                <img src="./images/illustration-thank-you.svg" alt="illustration-thank-you">
+                <p>You selected <span id="rating">1</span> out of 5</p>
+                <div class="information">
+                    <h1>Thank you!</h1>
+                    <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+                </div>
             </div>
         </article>
     </main>

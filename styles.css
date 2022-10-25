@@ -15,19 +15,24 @@
     --verydarkblue: hsl(216, 12%, 8%);
 }
 
+body{
+    background-color: var(--verydarkblue);
+}
+
 main{
     background-color: var(--verydarkblue);
     height: 100vh;
     font-family: 'Overpass';
+    font-size: 15px;
 }
 
-.rating-component{
+.rating-component, .tnk-component{
     display: flex;
     align-items: center;
     height: 100vh;
 }
 
-.card{
+.card, .card-2{
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -41,35 +46,91 @@ main{
     border-radius: 5%;
     width: 340px;
     height: 370px;
-    padding: 25px;
-    gap: 35px;
+    padding: 22px;
+    gap: 20px;
 }
 
-.card img{
+.card .star-img{
     border-radius: 50%;
     background-color: var(--darkblue);
     align-self: flex-start;
-    padding: 8px;
+    padding: 15px;
+    width: 45px;
+    height: auto;
 }
 
 .information h1{
     color: var(--white);
+    margin-bottom: 10px;
 }
 
 .information p{
     color: var(--lightgrey);
+    line-height: 1.6;
 }
 
 .rate-list{
     list-style-type: none;
+    align-self: flex-start;
+    flex-direction: row;
     display: flex;
-    flex-wrap: wrap; 
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
-button{
+.rate-list .btn-rate{
+    color: var(--lightgrey);
+    background-color: var(--darkblue);
+    width: 45px;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4px;
+    cursor: pointer;
+}
+
+.btn-submit{
     color: var(--white);
     background-color: var(---orange);
     border: none;
+    border-radius: 25px;
+    padding: 15px;
+    width: 100%;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.rate-list .btn-rate:hover{
+    background-color: var(--mediumgrey);
+    color: var(--white);
+}
+
+.rate-list .btn-rate:focus{
+    background-color: var(---orange);
+    color: var(--white);
+}
+
+.btn-submit:hover{
+    background-color: var(--white);
+    color: var(---orange);
+}
+
+.card-2 .information{
+    text-align: center;
+}
+
+.card-2 >p{
+    color: var(---orange);
+    background-color: var(--darkblue);
+    border-radius: 15px;
+    padding: 6px 9px 4px 9px;
+}
+
+.tnk-component{
+    display: none;
 }
