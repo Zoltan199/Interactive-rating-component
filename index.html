@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive rating component</title>
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <script src="./scripts.js"></script>
     <main>
-        <article class="rating-component">
+        <article class="rating-component hidden">
             <div class="card">
                 <img src="./images/icon-star.svg" alt="icon-star" class="star-img">
                 <div class="information">
@@ -25,13 +23,13 @@
                     <li><button class="btn-rate">4</button></li>
                     <li><button class="btn-rate">5</button></li>
                 </ul>              
-                <button type="submit" class="btn-submit">SUBMIT</button>
+                <button class="btn-submit" id="btnsubmit">SUBMIT</button>
             </div>
         </article>
         <article class="tnk-component">
             <div class="card-2">
                 <img src="./images/illustration-thank-you.svg" alt="illustration-thank-you">
-                <p>You selected <span id="rating">1</span> out of 5</p>
+                <p>You selected <span id="rating">0</span> out of 5</p>
                 <div class="information">
                     <h1>Thank you!</h1>
                     <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
@@ -39,5 +37,6 @@
             </div>
         </article>
     </main>
+    <script src="scripts.js"></script>
 </body>
 </html>

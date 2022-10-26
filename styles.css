@@ -79,6 +79,10 @@ main{
     width: 100%;
 }
 
+button{
+    user-select: none;
+}
+
 .rate-list .btn-rate{
     color: var(--lightgrey);
     background-color: var(--darkblue);
@@ -131,6 +135,6 @@ main{
     padding: 6px 9px 4px 9px;
 }
 
-.tnk-component{
+.tnk-component.hidden{
     display: none;
 }
